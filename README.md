@@ -1,4 +1,4 @@
-# Deepseek Background
+# Deepseek新版官网Background组件
 
 一个基于 WebGL 2 的交互式流体渐变背景组件。背景会随鼠标移动产生柔和扰动，并持续生成缓慢流动的抽象纹理。
 
@@ -12,14 +12,14 @@
 
 ## 文件说明
 
-| 文件 | 用途 |
-| --- | --- |
-| `background-core.js` | WebGL 渲染核心，可传入自定义参数 |
-| `BackgroundVue2.vue` | Vue 2 组件 |
-| `BackgroundVue3.vue` | Vue 3 组件 |
-| `Background.tsx` | React 组件 |
-| `BackgroundVanilla.js` | 原生 JavaScript 挂载函数 |
-| `background-core.d.ts` | 核心函数的 TypeScript 类型声明 |
+| 文件                   | 用途                             |
+| ---------------------- | -------------------------------- |
+| `background-core.js`   | WebGL 渲染核心，可传入自定义参数 |
+| `BackgroundVue2.vue`   | Vue 2 组件                       |
+| `BackgroundVue3.vue`   | Vue 3 组件                       |
+| `Background.tsx`       | React 组件                       |
+| `BackgroundVanilla.js` | 原生 JavaScript 挂载函数         |
+| `background-core.d.ts` | 核心函数的 TypeScript 类型声明   |
 
 ## 快速开始
 
@@ -134,25 +134,25 @@ const dispose = mountBackground(canvas, {
 })
 ```
 
-| 参数 | 默认值 | 说明 |
-| --- | ---: | --- |
-| `color1` / `color2` / `color3` | `#8AA3D6` / `#FFFFFF` / `#FFFFFF` | 三个六位十六进制颜色 |
-| `speed` | `14` | 动画速度 |
-| `scale` | `0.5` | 纹理尺度 |
-| `rotation` | `-5` | 纹理旋转角度 |
-| `offsetX` / `offsetY` | `0` / `65` | 纹理 X / Y 方向偏移 |
-| `proportion` | `50` | 颜色分布比例，范围建议 `0-100` |
-| `softness` | `100` | 颜色过渡柔和度，范围建议 `0-100` |
-| `shapeScale` | `10` | 纹理图案密度，范围建议 `0-100` |
-| `distortion` | `20` | 基础扭曲强度，范围建议 `0-100` |
-| `swirl` | `12` | 旋涡强度，范围建议 `0-100` |
-| `swirlIterations` | `8` | 旋涡计算次数，建议 `1-30` |
-| `mouseRadius` | `0.22` | 鼠标影响范围，使用画布宽度的比例 |
-| `mouseStrength` | `1.1` | 鼠标扰动强度 |
-| `decay` | `0.96` | 鼠标扰动消退速度，越接近 `1` 残留越久 |
-| `distortBoost` | `1.35` | 鼠标区域的额外扭曲 |
-| `noiseBoost` | `0` | 鼠标区域的额外噪声 |
-| `swirlBoost` | `0.45` | 鼠标区域的额外旋涡 |
+| 参数                           |                            默认值 | 说明                                  |
+| ------------------------------ | --------------------------------: | ------------------------------------- |
+| `color1` / `color2` / `color3` | `#8AA3D6` / `#FFFFFF` / `#FFFFFF` | 三个六位十六进制颜色                  |
+| `speed`                        |                              `14` | 动画速度                              |
+| `scale`                        |                             `0.5` | 纹理尺度                              |
+| `rotation`                     |                              `-5` | 纹理旋转角度                          |
+| `offsetX` / `offsetY`          |                        `0` / `65` | 纹理 X / Y 方向偏移                   |
+| `proportion`                   |                              `50` | 颜色分布比例，范围建议 `0-100`        |
+| `softness`                     |                             `100` | 颜色过渡柔和度，范围建议 `0-100`      |
+| `shapeScale`                   |                              `10` | 纹理图案密度，范围建议 `0-100`        |
+| `distortion`                   |                              `20` | 基础扭曲强度，范围建议 `0-100`        |
+| `swirl`                        |                              `12` | 旋涡强度，范围建议 `0-100`            |
+| `swirlIterations`              |                               `8` | 旋涡计算次数，建议 `1-30`             |
+| `mouseRadius`                  |                            `0.22` | 鼠标影响范围，使用画布宽度的比例      |
+| `mouseStrength`                |                             `1.1` | 鼠标扰动强度                          |
+| `decay`                        |                            `0.96` | 鼠标扰动消退速度，越接近 `1` 残留越久 |
+| `distortBoost`                 |                            `1.35` | 鼠标区域的额外扭曲                    |
+| `noiseBoost`                   |                               `0` | 鼠标区域的额外噪声                    |
+| `swirlBoost`                   |                            `0.45` | 鼠标区域的额外旋涡                    |
 
 ## 性能与生命周期
 
@@ -167,4 +167,4 @@ const dispose = mountBackground(canvas, {
 
 ## License
 
-请根据项目实际开源协议补充许可证文件。
+MIT License
